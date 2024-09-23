@@ -1,0 +1,101 @@
+@font-face {
+    font-family: kalameh;
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/WebFonts/_Woff/KalamehWeb-Black.woff') format('woff');
+}
+
+@font-face {
+    font-family: kalameh;
+    font-style: normal;
+    font-weight: bold;
+    src: url('../fonts/WebFonts/_Woff/KalamehWeb-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: kalameh;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/WebFonts/_Woff/KalamehWeb-Regular.woff') format('woff');
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+:root {
+    --color_darkblue: #07101D;
+    --color_tomato: #FF3C00;
+    --color_gray: #949494;
+}
+
+body {
+    font-family: kalameh;
+    font-weight: normal;
+    background-color: var(--color_darkblue);
+}
+
+.active {
+    color: var(--color_tomato) !important;
+    border-bottom: 1px solid;
+}
+
+.color_gray {
+    color: var(--color_gray) !important;
+}
+
+.color_bg_tomato {
+    background-color: var(--color_tomato);
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 904px;
+    height: 879px;
+    background-image: radial-gradient(#3D0D5861 38% ,#070F1C00 0% );
+    filter: blur(50px);
+    opacity: 0.6;
+    right:-260px;
+    top:-250px;
+}
+
+.w_70 {
+    width: 70%;
+}
+
+.fw_bold {
+    font-weight: bold;
+}
+
+.fw_900 {
+    font-weight: 900;
+}
+
+.m_r_n {
+    margin-right: 30%;
+}
+
+@media screen and (max-width: 991.98px) {
+    .bg_dark_md {
+        background-color: rgb(32, 32, 32);
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .menu_item {
+        font-size: 18px !important;
+    }
+}
